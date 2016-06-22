@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^BLOCK)();
 @interface CustomView : UIView
+//  移动动画
+@property(nonatomic, strong)BLOCK block;    //  在外界调用这个block就可以实现动画了
+//  移动动画
+- (void)addAnimation;
+
+- (void)addTransitionAnimation;
 
 @end
